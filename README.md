@@ -31,7 +31,7 @@ This skill turns your raw vulnerability description (or code snippet) into a com
 ### Installation
 
 ```bash
-claude install-skill https://github.com/<your-username>/vuln-report-writer
+claude install-skill https://github.com/namx05/vuln-report-writer
 ```
 
 That's it. The skill activates automatically when you ask Claude to write a vulnerability report.
