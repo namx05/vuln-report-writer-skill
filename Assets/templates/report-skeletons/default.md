@@ -6,14 +6,13 @@ To use this skeleton, no changes are needed — it is the active format out of t
 
 ## Skeleton
 
-```markdown
+````markdown
 ### {Title}
 
 **Severity:** {Critical | High | Medium | Low}
 
-**Vulnerability Type:** {Category}
-
 ## Description
+
 {Paragraph 1: Context — how the feature works and who uses it. No vulnerability yet.}
 {Paragraph 2: The problem — what goes wrong and the root cause.}
 {Paragraph 3 (optional): Bridge to impact — what this means in practice.}
@@ -23,16 +22,20 @@ To use this skeleton, no changes are needed — it is the active format out of t
 ```
 
 ## Impact
+
 {2-4 sentences. Concrete consequences. Quantify what is lost or gained. State who is affected.}
 
-## PoC
+## Scenario PoC
+
 {Step-by-step scenario using Alice/Bob. One sentence per step. Only for Critical/High/Medium.}
+
 1. Alice does X.
 2. Bob does Y.
 3. Result: Z happens because of the vulnerability.
 4. Outcome: Alice loses N tokens / Bob gains unauthorized access.
 
-## Recommendations
+## Recommended Mitigation:
+
 It is recommended to {specific fix} which will {why it works}.
 
 ```diff
@@ -41,16 +44,19 @@ It is recommended to {specific fix} which will {why it works}.
 - {line to remove}
   {surrounding context line}
 ```
+
 ```
 
 ## Section Rules
 
-| Section | Required | Notes |
-|---|---|---|
-| Title | Always | `{Actor} Can {Impact} {Affected Party}` — every word capitalized, no ending punctuation |
-| Severity | Always | Must come from the Likelihood × Impact matrix |
-| Vulnerability Type | Always | Use categories from `references/vulnerability-classes/` |
-| Description | Always | Context → Problem → Impact bridge. Max 4 lines per paragraph |
-| Impact | Always | Concrete, quantified consequences. 2-4 sentences |
-| PoC | Critical/High/Medium only | Alice/Bob scenario. One sentence per step. Omit for Low |
-| Recommendations | Always | "It is recommended to..." + diff block |
+| Section            | Required                  | Notes                                                                                   |
+| ------------------ | ------------------------- | --------------------------------------------------------------------------------------- |
+| Title              | Always                    | `{Actor} Can {Impact} {Affected Party}` — every word capitalized, no ending punctuation |
+| Severity           | Always                    | Must come from the Likelihood × Impact matrix                                           |
+| Vulnerability Type | Always                    | Use categories from `references/vulnerability-classes/`                                 |
+| Description        | Always                    | Context → Problem → Impact bridge. Max 4 lines per paragraph                            |
+| Impact             | Always                    | Concrete, quantified consequences. 2-4 sentences                                        |
+| PoC                | Critical/High/Medium only | Alice/Bob scenario. One sentence per step. Omit for Low                                 |
+| Recommendations    | Always                    | "It is recommended to..." + diff block                                                  |
+```
+````
